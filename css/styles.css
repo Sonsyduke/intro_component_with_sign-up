@@ -147,11 +147,11 @@ table {
 body {
   font-family: "Poppins", sans-serif;
   font-size: var(--font-size);
+  background-image: url("/images/bg-intro-desktop.png");
+  background-color: var(--color-primary-red);
 }
 
 .main-section {
-  background-image: url("/images/bg-intro-desktop.png");
-  background-color: var(--color-primary-red);
   width: 100vw;
   height: 100vh;
 }
@@ -287,4 +287,20 @@ body {
 .terms {
   color: var(--color-primary-red);
   text-decoration: none;
+}
+
+/* ==================== FINISHED WITH THE BASIC STYLING ==================== */
+
+/* ==================== MEDIA QUERIES ==================== */
+
+@media (max-width: 800px) {
+  .main-section {
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 }
