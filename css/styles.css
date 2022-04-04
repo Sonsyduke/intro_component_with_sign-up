@@ -7,7 +7,12 @@
   --color-natural-gray-blue: hsl(246, 25%, 77%);
   --color-white: #fff;
 
+  --box-shadow: 0px 8px 6px 0px rgba(110,110,110,0.5);
+
+  --paddding-sides: 0 1.2rem;
   --font-size: 16px;
+
+  --border-radius: 5px
 }
 
 /* ==================== CSS RESET ==================== */
@@ -79,8 +84,10 @@ body {
   align-items: center;
 }
 
+/* ==================== START OF THE lEFT SIDE ==================== */
+
 .left-side {
-  padding: 0 1.2rem;
+  padding: var(--paddding-sides);
 }
 
 .main-heading {
@@ -93,4 +100,47 @@ body {
 .desc {
   color: var(--color-white);
   line-height: 1.5;
+}
+
+/* ==================== END OF THE LEFT SIDE ==================== */
+
+/* ==================== START OF THE RIGHT SIDE ==================== */
+
+.right-side {
+  padding: var(--paddding-sides);
+}
+
+.trail {
+  width: 100%;
+  background-color: var(--color-accent-blue);
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--color-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+#form {
+  background-color: var(--color-white);
+  margin: 1rem 0;
+  border-radius: var(--border-radius);
+  padding: 2rem 1.5rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group input {
+  width: 90%;
+  border: 1px solid var(--color-natural-gray-blue);
+  border-radius: var(--border-radius);
+  padding: 0.8rem 1rem;
+  margin: 0.8rem 0;
+}
+
+.error-icon {
+  position: absolute;
+  top: 23px;
+  right: 20px;
 }
